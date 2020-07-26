@@ -1,0 +1,1 @@
+java -cp "target/json_flat-1.0-SNAPSHOT.jar:libs/*:./*" JsonFlatMain
