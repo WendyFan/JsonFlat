@@ -12,7 +12,8 @@ public class JsonFlatMainTest {
         ClassLoader classLoader = getClass().getClassLoader();
         File file = new File(classLoader.getResource("testdata/input.txt").getFile());
         String st = JsonFlatMain.readInput(new FileInputStream(file));
-        Assert.assertTrue(st.equals("{ \"a\": 1 }"));
+        String expected = "{    \"a\": 1,    \"b\": true,    \"c\": {        \"d\": 3,        \"e\": \"test\"    }}";
+        Assert.assertTrue(st.equals(expected));
     }
 }
 
