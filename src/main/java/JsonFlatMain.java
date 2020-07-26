@@ -2,6 +2,7 @@ import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.nio.charset.Charset;
+import com.google.gson.*;
 
 public class JsonFlatMain {
     public static String readInput(InputStream in) {
@@ -21,6 +22,8 @@ public class JsonFlatMain {
     }
 
     public static String flatJson(String in) {
+        JsonElement je = new JsonParser().parse(in);
+
         return in;
     }
 
