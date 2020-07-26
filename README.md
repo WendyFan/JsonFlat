@@ -6,3 +6,7 @@
 
 ##### cat ./src/main/resources/testdata/input.txt | bash ./src/main/scripts/run.sh 
       {"a":1,"b":true,"c.d":3,"c.e":"test"}
+
+### Build:
+
+##### mvn clean install
