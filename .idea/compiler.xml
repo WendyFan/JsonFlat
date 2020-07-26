@@ -9,8 +9,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="json_flat" target="1.5" />
-      <module name="untitled" target="1.5" />
+      <module name="json_flat" target="11" />
     </bytecodeTargetLevel>
   </component>
 </project>

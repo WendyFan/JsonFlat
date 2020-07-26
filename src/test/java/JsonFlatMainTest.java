@@ -1,9 +1,9 @@
+import org.junit.Assert;
+import org.junit.Test;
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
-
-import org.junit.Test;
-import org.junit.Assert;
 
 public class JsonFlatMainTest {
 
@@ -12,6 +12,8 @@ public class JsonFlatMainTest {
         ClassLoader classLoader = getClass().getClassLoader();
         File file = new File(classLoader.getResource("testdata/input.txt").getFile());
         String st = JsonFlatMain.readInput(new FileInputStream(file));
-        Assert.assertTrue(st.equals(""));
+        Assert.assertTrue(st.equals("{ \"a\": 1 }"));
     }
 }
+
+
