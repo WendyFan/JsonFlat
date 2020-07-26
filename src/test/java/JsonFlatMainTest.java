@@ -21,7 +21,7 @@ public class JsonFlatMainTest {
     @Test
     public void testParseJson() {
         JsonElement je = new JsonParser().parse(jsonInString);
-        JsonObject  jobject = je.getAsJsonObject();
+        JsonObject jobject = je.getAsJsonObject();
         Set<String> set = jobject.keySet();
         Assert.assertEquals(set.size(), 3);
         Assert.assertTrue(jobject.get("a").getAsJsonPrimitive().isNumber());
@@ -37,7 +37,7 @@ public class JsonFlatMainTest {
     @Test
     public void testFlatJson() {
         JsonElement je = new JsonParser().parse(JsonFlatMain.flatJson(jsonInString));
-        JsonObject  jobject = je.getAsJsonObject();
+        JsonObject jobject = je.getAsJsonObject();
         Set<String> set = jobject.keySet();
         Assert.assertEquals(set.size(), 4);
         Assert.assertTrue(jobject.get("a").getAsJsonPrimitive().isNumber());
